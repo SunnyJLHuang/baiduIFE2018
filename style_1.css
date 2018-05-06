@@ -1,0 +1,22 @@
+body{
+	font-family: serif;
+	font-weight: bold;
+	
+}
+.Firsthead{
+font-size: 25px;
+}
+ul{
+ 	list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+ul,dl{
+	line-height: 1.5;
+}
+dd{
+	margin: 0;
+	padding: 0;
+}
