@@ -1,0 +1,145 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  background-color: #333333; 
+}
+#headContainer {
+  width: 960px;
+  height:50px;
+ overflow:auto; /* 清除父元素浮动*/
+  display:flex;
+}
+#logo {
+  width: 500px;
+  text-align: center;
+  line-height:50px;       /*父元素是盒子容器且高度已经设定 设定父元素的line-height为其高度来使得子元素垂直居中*/
+  font-size: 20px;
+  margin-right: 150px;
+  color:white;
+  
+}
+.nav {
+  list-style-type: none; /*去掉列表样式 */
+  margin: 0;
+  padding: 0; /* margin padding 同时才能去掉格式，保持缩进。*/
+}
+.nav li {
+  float: Right; /* li横向做菜单*/
+  margin-right: 10px;
+  font-size: 13px;
+
+}
+.nav li a {
+  text-decoration: none; /*a 里面去掉下划线 */
+  display:inline-block;
+color:white;
+}
+#Banner{
+  width:100%;
+  height:200px;
+  background-color:#66BB33;   
+  position:relative;
+}
+#Banner ol{
+  margin:0 auto;
+}
+#Banner ol li{
+list-style:none;
+  border:1px solid gray;
+  width:18px;
+}
+
+#Banner ol li:nth-of-type(4){
+position:absolute;
+  right:180px;
+  bottom:0;
+}
+#Banner ol li:nth-of-type(3){
+position:absolute;
+  right:200px;
+  bottom:0;
+}
+#Banner ol li:nth-of-type(2){
+position:absolute;
+  right:220px;
+  bottom:0;
+//  line-height:3;
+}
+#Banner ol li:nth-of-type(1){
+position:absolute;
+  right:240px;
+  bottom:0;
+}
+.active{
+  line-height:3;
+  vertical-align:bottom;
+}
+#mainNav{
+ width:960px;
+  height:100px;
+}
+#mainNav ul{
+  padding-left: 0;
+}
+#mainNav ul li{
+   list-style-type:none;
+   float:left;
+  width:90px;
+}
+#mainNav ul li a{
+   text-decoration:none;
+   width:100%;
+    line-height:3;
+  background-color:#EEECE8;
+   text-align:center;
+  color:black;
+  display:inline-block;
+  margin-left:500px;
+  border-radius:13px;
+  border:1px solid silver;
+}
+#mainNav ul li a:focus, #mainNav ul li a:hover{
+  background-color:white;
+}
+hr{
+  clear:both;
+ border:0.5px solid gray;
+  border-bettom:0;
+  width:100%;
+}
+section{
+  margin:0;
+  padding:0;
+}
+.panel1{
+  width:960px;
+  height:600px;
+   display:flex;
+  margin:0 auto;
+   flex-wrap:wrap;
+   justify-content:space-around;
+  align-items:baseline;
+}
+.panel{
+  padding:80px;
+   border:0.5px solid gray;
+  //margin:0 5px;
+
+ 
+}
+footer {
+  clear: both;
+  background-color:#333333;
+  text-align: center;
+  height: 100px;
+  line-height:100px;
+  color:white;
+
+  /*子元素是块级元素但是子元素高度没有设定 父元素设定display:table-cell;vertical-align:middle来解决*/
+}
